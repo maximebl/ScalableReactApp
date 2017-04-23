@@ -5,7 +5,7 @@
 */
 
 import React from 'react';
-
+import AppBar from '../AppBar';
 import styles from './styles.css';
 
 function Navigation({topics, selectTopic}) {
@@ -17,6 +17,7 @@ const topicNodes = topics.map(t=>(
 
   return (
     <div className={styles.navigation}>
+      <AppBar/>
       {topicNodes}
     </div>
   );
